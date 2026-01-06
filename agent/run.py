@@ -15,7 +15,7 @@ def main():
             config={"configurable": {"session_id": session_id}}
         )
 
-        print("\nAgent:\n", response.content, "\n")
+        print("\nRobot grad student:\n", response.content, "\n")
 
 if __name__ == "__main__":
     main()
