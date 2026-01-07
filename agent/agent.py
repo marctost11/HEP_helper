@@ -1,9 +1,9 @@
-from langchain.agents import create_openai_functions_agent, AgentExecutor
-from langchain.chains import LLMChain
+#from langchain.agents import create_openai_functions_agent, AgentExecutor
+#from langchain.chains import LLMChain
 from .llm import get_llm
 from .memory import get_memory
 from .prompts import SYSTEM_PROMPT
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableWithMessageHistory
 
 def build_agent(tools=None):

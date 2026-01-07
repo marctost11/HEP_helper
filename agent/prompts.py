@@ -30,14 +30,11 @@ def get_system_prompt(examples_dir: str = "examples/hep-programming-hints", max_
     examples_content = load_markdown_examples(directory=str(examples_path), max_chars=max_chars)
     examples_section = format_examples_for_prompt(examples_content)
     
-    return BASE_SYSTEM_PROMPT #+ examples_section
+    return BASE_SYSTEM_PROMPT + examples_section
 
 # Default system prompt (loads examples if examples/ directory exists)
 SYSTEM_PROMPT = get_system_prompt()
 
 REQUIREMENTS_PROMPT = """
-Ask the user to specify:
-- Which analysis step they need help with
-- Dataset format
-- Output format
+
 """
