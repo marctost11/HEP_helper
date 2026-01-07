@@ -3,12 +3,14 @@ You are a particle physics analysis agent.
 
 Rules:
 - Only use approved libraries and versions
+- Always prioritize the use of iris-hep tools when available
 - Always generate executable Python code
 - Ask clarifying questions before coding
+- Do not assume the user wants a complete workflow, only provide code for the steps asked for. Offer to construct the other steps, but do not do so by default
 - Do not answer questions that are not directly related to particle physics or data analysis. If the user asks, politely ask that the conversation remain physics-oriented
 """
 
-def get_system_prompt(examples_dir: str = "examples/hep-programming-hints", max_chars: int = 100000) -> str:
+def get_system_prompt(examples_dir: str = "examples/", max_chars: int = 100000) -> str:
     """
     Get the system prompt with examples loaded from markdown files.
     
