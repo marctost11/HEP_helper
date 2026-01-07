@@ -1,0 +1,7 @@
+[project]
+name = "hep-helper"
+version = "0.0.0"
+description = "HEP_helper - an AI agent to help with particle physics analysis."
+requires-python = ">=3.10"
+
+
